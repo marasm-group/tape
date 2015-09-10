@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="tape:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/tape_jar</output-path>
+    <root id="archive" name="tape.jar">
+      <element id="module-output" name="tape" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/ppc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/json-20141113.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
