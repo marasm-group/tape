@@ -66,7 +66,9 @@ public class Tape extends PPCDevice
             case ctrlPort:
                 ctrlOut(data);return;
             case addressPort:
+                Variable delay=address.sub(data);
                 address=data;
+                try{Thread.sleep(Math.abs(delay.longValue()));}catch(InterruptedException e){}
                 return;
             case dataPort:
                 tape[address.intValue()%tape.length]=data;
